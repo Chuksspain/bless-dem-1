@@ -13,8 +13,10 @@
         <nav>
             <ul>
                 <li><a href="about.html">ABOUT</a></li>
-                <li><a href="home">HOME</a></li>
                 <LI><a href="http://www.google.com">CONTACT</a></LI>
+                <li><a href="emmetdemo.html">Emmet</a></li>
+                <li><a href="Top_cars.html">Top Cars Table</a></li>
+                <li><a href="forms.html">Forms</a></li>
             </ul>
         </nav>
 
@@ -34,7 +36,7 @@
             <i>This should be a lesson to the youths</i> <br>
             I hope sir <sup><a href="http://www.jumia.com" target="_blank"> Henry</a></sup> will like this...
         </p>
-        <img src="/images (22).jpeg" alt="" width="222">
+        <img src="./image/sax pic.jpeg" alt="" width="222">
         <h2>Names of cars :</h2>
         <ol>
             <li>Benz</li>
@@ -50,7 +52,81 @@
 
             </p>
         </section>
+
+        <button onclick="alert('Hello There')">Click Me</button>
+        <button onclick="navigateTo('https://jumia.com.ng')">Click Me</button>
+        <a href="http://www.jiji.com" target="_blank"><button> SPAIN</button></a>
+
+        <!-- HTTP Methods: GET, POST, PUT, DELETE, PATCH  -->
+        <!-- CRUD
+        C: Create
+        R: Read
+        U: Update
+        D: Delete -->
+        <!-- form methods: GET and POST -->
+        <form action="" id="MyFirstForm" method="post">
+            <input type="text" name="fname" id="fname" placeholder="Enter your First Name" />
+            <input type="text" name="lname" id="lname" placeholder="Enter your Last Name" />
+            <label for="maleGender">
+                <input type="radio" name="gender" id="maleGender" value="Male" /> Male
+            </label>
+            <label for="femaleGender">
+                <input type="radio" name="gender" id="femaleGender" value="Female" /> Female
+            </label>
+            <input type="password" name="password" id="password" placeholder="Enter your Password here">
+            <button type="reset">Reset Form</button>
+            <button type="submit">Submit</button>
+            <input type="reset" value="Reset Form">
+            <input type="submit" value="Submit">
+        </form>
+        <div id="FormSubmission">
+
+        </div>
     </main>
+
+    <script>
+        function navigateTo(url) {
+            window.location.href = url;
+        }
+
+        document.querySelector('#MyFirstForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const fname = document.querySelector('#fname').value;
+            const lname = document.querySelector('#lname').value;
+            const password = document.querySelector('#password').value;
+            document.querySelector('#FormSubmission').innerHTML = `
+            <h2>Hurray Your Form Submission Details can be found below:</h2>
+            <strong>First Name:</strong> ${fname} <br/>
+            <strong>Last Name:</strong> ${lname} <br/>
+            <strong>Full Name:</strong> ${fname} ${lname} <br/>
+            <strong>Your Password is:</strong> ${password} <br/>
+            `;
+
+        })
+
+    </script>
+    <section>
+        <h2>CHUKSSPAIN'S CONSULTANCY FORM</h2>
+        <hr>
+        <form action="" id="Chuksspains-consultancy-form" method="Post">
+            <input type="text" name="Fisrtname" id="Firstname" placeholder="Enter your fisrt name"><br>
+            <input type="text" name="Middlename" id="Middlename" placeholder="Enter your Middlename"> <br>
+            <input type="text" name="Lastname" id="Lastname" placeholder="Enter your lastname"> <br>
+            <input type="number" name="Age" id="Age" placeholder="Enter your age"> <br>
+            <label for="Marital Status">
+                <input type="radio" name="Marital Status" id="Single" value="Single"> Single
+            </label>
+            <label for="Marital Status">
+                <input type="radio" name="Marital Status" id="Married" value="Married"> Married
+            </label> <br>
+            <input type="password" name="password" id="password" placeholder="Enter your Password here"> <br>
+            <button type="reset">Reset Form</button>
+            <button type="submit">Submit</button>
+        </form>
+        <img src="./image/download (2).jpeg" alt="" width="222">
+        <p>THANK YOU .....</p>
+    </section>
+
 
 
 </body>
