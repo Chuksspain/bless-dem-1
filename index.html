@@ -67,6 +67,11 @@
         <form action="" id="MyFirstForm" method="post">
             <input type="text" name="fname" id="fname" placeholder="Enter your First Name" />
             <input type="text" name="lname" id="lname" placeholder="Enter your Last Name" />
+            <input type="color" name="color" id="color">
+            <br>
+            <label for="datetime">Date Time</label>
+            <input type="datetime-local" name="datetime" id="datetime">
+            <br>
             <label for="maleGender">
                 <input type="radio" name="gender" id="maleGender" value="Male" /> Male
             </label>
@@ -74,6 +79,20 @@
                 <input type="radio" name="gender" id="femaleGender" value="Female" /> Female
             </label>
             <input type="password" name="password" id="password" placeholder="Enter your Password here">
+
+            <select name="residency" id="residency">
+                <option value="">Select Your Country of Residence</option>
+                <option>Nigeria</option>
+                <option>Russia</option>
+                <option>Kenya</option>
+                <option>Ghana</option>
+                <option>Cameroon</option>
+                <option>Niger</option>
+                <option>South Africa</option>
+                <option>Canada</option>
+                <option>Sweden</option>
+                <option>Denmark</option>
+            </select>
             <button type="reset">Reset Form</button>
             <button type="submit">Submit</button>
             <input type="reset" value="Reset Form">
@@ -94,11 +113,14 @@
             const fname = document.querySelector('#fname').value;
             const lname = document.querySelector('#lname').value;
             const password = document.querySelector('#password').value;
+            const color = document.querySelector('#color').value;
+            document.querySelector('body').style.background = color;
             document.querySelector('#FormSubmission').innerHTML = `
             <h2>Hurray Your Form Submission Details can be found below:</h2>
             <strong>First Name:</strong> ${fname} <br/>
             <strong>Last Name:</strong> ${lname} <br/>
             <strong>Full Name:</strong> ${fname} ${lname} <br/>
+            <strong>Selected Color:</strong> ${color} <br/>
             <strong>Your Password is:</strong> ${password} <br/>
             `;
 
@@ -112,12 +134,32 @@
             <input type="text" name="Fisrtname" id="Firstname" placeholder="Enter your fisrt name"><br>
             <input type="text" name="Middlename" id="Middlename" placeholder="Enter your Middlename"> <br>
             <input type="text" name="Lastname" id="Lastname" placeholder="Enter your lastname"> <br>
+            <input type="tel" name="Lastname" id="Lastname" placeholder="Enter your phone"> <br>
             <input type="number" name="Age" id="Age" placeholder="Enter your age"> <br>
-            <label for="Marital Status">
-                <input type="radio" name="Marital Status" id="Single" value="Single"> Single
+            <label for="Single">
+                <input type="radio" name="MaritalStatus" id="Single" value="Single"> Single
             </label>
-            <label for="Marital Status">
-                <input type="radio" name="Marital Status" id="Married" value="Married"> Married
+            <label for="Married">
+                <input type="radio" name="MaritalStatus" id="Married" value="Married"> Married
+            </label> <br>
+            <label for="Divorced">
+                <input type="radio" name="MaritalStatus" id="Divorced" value="Divorced"> Divorced
+            </label> <br>
+            <label for="Widowed">
+                <input type="radio" name="MaritalStatus" id="Widowed" value="Widowed"> Widowed
+            </label> <br>
+            Your Hobbies
+            <label for="Coding">
+                <input type="checkbox" name="Hobbies" id="Coding" value="Coding"> Coding
+            </label>
+            <label for="Swimming">
+                <input type="checkbox" name="Hobbies" id="Swimming" value="Swimming"> Swimming
+            </label> <br>
+            <label for="Skating">
+                <input type="checkbox" name="Hobbies" id="Skating" value="Skating"> Skating
+            </label> <br>
+            <label for="SkyDiving">
+                <input type="checkbox" name="Hobbies" id="SkyDiving" value="Sky Diving"> Sky Diving
             </label> <br>
             <input type="password" name="password" id="password" placeholder="Enter your Password here"> <br>
             <button type="reset">Reset Form</button>
