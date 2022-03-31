@@ -19,16 +19,46 @@
     </nav>
     <hr>
     <h1>Forms Demo</h1>
-    <form action="/tacus">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <input type="text">
+
+    <form action="https://www.google.com" target="_blank"> <br>
+        <label for="password">Enter a password</label>
+        <input id="password" type="password" placeholder="Password" name="Password"> <br>
+        <label for="color">Choose your unique color</label>
+        <input id="color" type="color" placeholder="Color" name="color"> <br>
+        <label for="text">Type a Text</label>
+        <input id="text" type="text" placeholder="Text" name="Text"> <br>
+        <label for="Number">Take a Number</label>
+        <input id="Number" type="number" placeholder="Number" name="Number" min="1" max="100"> <br>
+        <button>Submit</button>
     </form>
 
+    <h2>MORE INPUTS</h2>
+    <form action="https://www.google.com" target="_blank"> <br>
+        <label for="Agree">I Agree !!</label>
+        <input type="Checkbox" name="Agree_tos" id="Agree"> <br>
+        <label for="M">MEDIUM</label>
+        <input type="radio" name="size" id="M" value="M"> <br>
+        <label for="L">LARGE</label>
+        <input type="radio" name="size" id="L" value="L"> <br>
+        <label for="XL">EXRA LARGE</label>
+        <input type="radio" name="size" id="XL" value="XL"> <br>
+        <label for="UXL">ULTRA EXTRA LARGE</label>
+        <input type="radio" name="size" id="UXL" value="UXL"> <br>
+        <label for="">Please select your most prefered</label>
+        <select name="shirt" id="shirt">
+            <option value="Polo">Polo</option>
+            <option value="T-shirt">T-shirt</option>
+            <option value="Hoodie">Hoodie</option>
+            <option value="Plain">Plain</option>
+            <option value="Vest">Vest</option>
+        </select> <br>
+        <label for="volume">Volume</label>
+        <input type="range" id="volume" min="1" max="20" name="volume_level"> <br>
+        <label for="request">For any special request</label>
+        <textarea name="" id="request" cols="55" rows="7"></textarea>
+        <button>Submit</button>
 
-
-
+    </form>
 
 
 
