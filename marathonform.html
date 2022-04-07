@@ -6,6 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marathon Form Slide</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/site.webmanifest">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -14,7 +24,8 @@
 
     <h1>RACE REGISTRATION</h1>
     <div>
-        <form action="https://www.google.com" target="_blank" <label for="Fisrt nmae">First name</label>
+        <form action="https://www.google.com" target="_blank">
+            <label for="Fisrt nmae">First name</label>
             <input type="text" id="First name" name="First name" placeholder="First name">
             <label for="Last name">Last name</label>
             <input type="text" id="Last name" name="Last name" placeholder="Last name">
@@ -34,20 +45,21 @@
     </div>
     <div>
         <label for="email">Email</label>
-        <input type="email" name="email" id="email">
+        <input type="email" name="email" id="email" required>
         <label for="password">Password</label>
-        <input type="password" name="password" id="password">
+        <input type="password" name="password" id="password" required>
     </div>
     <div>
         <label for="division">Select Age Group</label>
-        <select name="division" id="division"></select>
-        <option value="kids">5-15</option>
-        <option value="children">15-25</option>
-        <option value="adults">25-65</option>
-        <option value="aged">65-150</option>
+        <select name="division" id="division">
+            <option value="kids">5-15</option>
+            <option value="children">15-25</option>
+            <option value="adults">25-65</option>
+            <option value="aged">65-150</option>
+        </select>
     </div>
     <button>REGISTER</button>
-    ></form>
+    </form>
 
 </body>
 
