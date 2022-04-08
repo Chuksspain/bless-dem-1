@@ -4,7 +4,7 @@ h2 {
 }
 
 h1 {
-    color: magenta;
+    color: #ff00ff;
     background-color: black;
 }
 
@@ -15,4 +15,14 @@ button {
 
 p {
     color: black;
+}
+
+body {
+    background-color: skyblue;
+
+}
+
+form {
+    color: black;
+    background-color: skyblue;
 }
