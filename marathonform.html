@@ -16,50 +16,105 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="/icons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+    <style>
+        /* There Different type of CSS selectors, they include:
+        - Tagname Selector
+        - ID Selector: Prefix the element id value with #
+        - Class Name Selector: Prefix the element class name with .
+        - Attribute Selector: Wrap just the attribute or the addribute and value within square brackets([])
+        - Psuodo Selector: usually start with colon(:)*/
+
+
+        .custom-search-form {
+            display: flex;
+            margin: 15px;
+            background-color: #3418b1;
+            border-radius: 20px;
+        }
+
+        .custom-search-form input {
+            flex: 1;
+            padding: 15px;
+            outline: none;
+            background-color: #bcb0f1;
+            border-radius: 20px 0 0 20px;
+            border: none;
+            inset: none;
+            color: #fff;
+        }
+
+        .custom-search-form input::placeholder {
+            color: rgb(15, 3, 3);
+        }
+
+        .custom-button {
+            padding: 15px;
+            background-color: #afafaf;
+            border-radius: 0 20px 20px 0;
+            border: none;
+        }
+    </style>
 </head>
 
 <body>
     <a href="index.html"> Go Home</a>
     <hr>
 
-    <h1>RACE REGISTRATION</h1>
-    <div>
-        <form action="https://www.google.com" target="_blank">
-            <label for="Fisrt nmae">First name</label>
-            <input type="text" id="First name" name="First name" placeholder="First name">
-            <label for="Last name">Last name</label>
-            <input type="text" id="Last name" name="Last name" placeholder="Last name">
-    </div>
-    <p>SELECT A RACE:</p>
-    <div>
-        <label for="Funrun">Funrun 5k</label>
-        <input type="radio" name="RACE" id="Funrun" value="Funrun">
-    </div>
-    <div>
-        <label for="Halfmarathon">Half Marathon</label>
-        <input type="radio" name="RACE" id="Halfmarathon" value="Halfmarathon">
-    </div>
-    <div>
-        <label for="Fullmarathon">FullMarathon</label>
-        <input type="radio" name="RACE" id="Fullmarathon" value="Fullmarathon">
-    </div>
-    <div>
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" required>
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password" required>
-    </div>
-    <div>
-        <label for="division">Select Age Group</label>
-        <select name="division" id="division">
-            <option value="kids">5-15</option>
-            <option value="children">15-25</option>
-            <option value="adults">25-65</option>
-            <option value="aged">65-150</option>
-        </select>
-    </div>
-    <button>REGISTER</button>
+    <form action="https://google.com/search" id="MyCustomSearchForm" class="custom-search-form" method="get"
+        target="_blank">
+        <input type="search" name="q" id="" placeholder="Enter your search phrase">
+        <button type="submit" class="custom-button">Search</button>
     </form>
+
+    <h1>RACE REGISTRATION</h1>
+    <form action="https://www.google.com" target="_blank" method="get">
+        <div>
+            <label for="Firstnmae">First name</label>
+            <input type="text" id="Firstname" name="Firstname" placeholder="First name">
+            <label for="Lastname">Last name</label>
+            <input type="text" id="Lastname" name="Lastname" placeholder="Last name">
+        </div>
+        <p>SELECT A RACE:</p>
+        <div>
+            <label for="Funrun">Funrun 5k</label>
+            <input type="radio" name="RACE" id="Funrun" value="Funrun">
+        </div>
+        <div>
+            <label for="Halfmarathon">Half Marathon</label>
+            <input type="radio" name="RACE" id="Halfmarathon" value="Halfmarathon">
+        </div>
+        <div>
+            <label for="Fullmarathon">FullMarathon</label>
+            <input type="radio" name="RACE" id="Fullmarathon" value="Fullmarathon">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <div>
+            <label for="division">Select Age Group</label>
+            <select name="division" id="division">
+                <option value="kids">5-15</option>
+                <option value="children">15-25</option>
+                <option value="adults">25-65</option>
+                <option value="aged">65-150</option>
+            </select>
+        </div>
+        <button type="submit">REGISTER</button>
+    </form>
+    <!-- Inline Styling Version of Custom Search
+    <form action="https://google.com/search" method="get"  target="_blank" style="display:flex; margin: 15px; background-color: #eee;border-radius: 20px;">
+        <input
+            style="flex:1; padding: 15px;outline: none; background-color: #eee;border-radius: 20px 0 0 20px;border:none;inset: none;"
+            type="search" name="q" id="" placeholder="Enter your search phrase">
+        <button style=" padding: 15px; background-color: #afafaf;border-radius: 0 20px 20px 0;border:none;"
+            type="submit">Search</button>
+    </form>
+-->
+
+
 
 </body>
 
