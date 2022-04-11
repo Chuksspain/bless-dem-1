@@ -1,20 +1,28 @@
 h2 {
     color: magenta;
     background-color: black;
+    letter-spacing: 15px;
 }
 
 h1 {
     color: #ff00ff;
     background-color: black;
+    text-align: center;
+    font-weight: normal;
+    text-decoration: underline;
+    letter-spacing: 15px;
 }
 
 button {
     color: magenta;
     background-color: black;
+
+}
 }
 
 p {
     color: black;
+    line-height: 1;
 }
 
 body {
