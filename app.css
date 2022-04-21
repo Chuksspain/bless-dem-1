@@ -43,8 +43,9 @@ form {
 }
 
 #SPAIN {
-    background-color: darkgreen;
-    color: yellow;
+    background-color: magenta;
+    color: black;
+
 }
 
 a {
@@ -52,4 +53,63 @@ a {
     color: magenta;
     font-size: 20px;
 
+}
+
+/*Sibling Selector*/
+h2~p,
+/*Ajacent Sibling Selector*/
+h2+p {
+    background-color: magenta;
+    color: black;
+}
+
+div>a {
+    background-color: magenta;
+    color: black;
+}
+
+input[type=password] {
+    background-color: magenta;
+
+}
+
+a[href*=about] {
+    background-color: magenta;
+    color: black;
+
+}
+
+button:hover {
+    background-color: magenta;
+    color: black;
+}
+
+a[href*=about]:hover {
+    background-color: black;
+    color: magenta;
+}
+
+a:hover {
+    background-color: magenta;
+    color: black;
+}
+
+h1:hover {
+    background-color: magenta;
+    color: black;
+}
+
+#SPAIN:hover {
+    background-color: black;
+    color: magenta;
+}
+
+p:hover {
+    text-decoration: underline;
+
+}
+
+h2:hover {
+    background-color: magenta;
+    color: black
 }
