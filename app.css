@@ -2,9 +2,12 @@ h2 {
     color: magenta;
     background-color: black;
     letter-spacing: 15px;
+    display: inline-block;
 }
 
 h1 {
+    display: inline-block;
+    margin: 0 auto;
     color: #ff00ff;
     background-color: black;
     text-align: center;
@@ -21,11 +24,12 @@ button {
     font-size: 20px;
 
 }
-}
+
 
 p {
     color: black;
     line-height: 1;
+    display: inline-block;
 }
 
 body {
@@ -56,16 +60,29 @@ a {
 }
 
 /*Sibling Selector*/
-h2~p,
+/* h2~p, */
 /*Ajacent Sibling Selector*/
 h2+p {
     background-color: magenta;
     color: black;
+    display: inline-block;
 }
+
+/*Sibling Selector*/
+/* h2~p {
+    background-color: rgb(51, 173, 27);
+    color: black;
+}
+
+h2~* {
+    background-color: rgb(51, 173, 27);
+    color: black;
+} */
 
 div>a {
     background-color: magenta;
     color: black;
+    display: inline-block;
 }
 
 input[type=password] {
@@ -106,10 +123,22 @@ h1:hover {
 
 p:hover {
     text-decoration: underline;
-
 }
 
 h2:hover {
     background-color: magenta;
     color: black
+}
+
+img:hover {
+    -webkit-filter: drop-shadow(0 0 10px rgba(255, 0, 255, 0.5));
+    -moz-filter: drop-shadow(0 0 10px rgba(255, 0, 255, 0.5));
+    -o-filter: drop-shadow(0 0 10px rgba(255, 0, 255, 0.5));
+    filter: drop-shadow(0 0 10px rgba(255, 0, 255, 0.5));
+
+}
+
+button:active {
+    color: skyblue;
+    background-color: magenta;
 }
