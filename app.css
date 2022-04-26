@@ -142,3 +142,12 @@ button:active {
     color: skyblue;
     background-color: magenta;
 }
+
+h1,
+h2::first-letter {
+    font-size: 50px;
+}
+
+p::selection {
+    background-color: purple;
+}
