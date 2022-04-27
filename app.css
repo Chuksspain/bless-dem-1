@@ -1,6 +1,6 @@
 h2 {
-    color: magenta;
-    background-color: black;
+    color: blue;
+
     letter-spacing: 15px;
     display: inline-block;
 }
@@ -8,8 +8,8 @@ h2 {
 h1 {
     display: inline-block;
     margin: 0 auto;
-    color: #ff00ff;
-    background-color: black;
+    color: blue;
+
     text-align: center;
     font-weight: normal;
     text-decoration: wavy;
@@ -19,8 +19,8 @@ h1 {
 }
 
 button {
-    color: magenta;
-    background-color: black;
+    color: lawngreen;
+    background-color: blue;
     font-size: 20px;
 
 }
@@ -33,18 +33,16 @@ p {
 }
 
 body {
-    background-color: skyblue;
+    background-color: lawngreen;
 
 }
 
 form {
     color: black;
-
+    background-color: lawngreen;
 }
 
-* {
-    background-color: skyblue;
-}
+
 
 #SPAIN {
     background-color: magenta;
@@ -53,18 +51,23 @@ form {
 }
 
 a {
-    background-color: black;
-    color: magenta;
-    font-size: 20px;
 
+    color: blue;
+    font-size: 20px;
+    border-color: blue;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 30px;
 }
 
 /*Sibling Selector*/
 /* h2~p, */
 /*Ajacent Sibling Selector*/
 h2+p {
-    background-color: magenta;
-    color: black;
+
+    color: blue;
     display: inline-block;
 }
 
@@ -80,30 +83,31 @@ h2~* {
 } */
 
 div>a {
-    background-color: magenta;
-    color: black;
+
+    color: blue;
     display: inline-block;
 }
 
 input[type=password] {
-    background-color: magenta;
+    background-color: lawngreen;
 
 }
 
 a[href*=about] {
-    background-color: magenta;
-    color: black;
+
+    color: blue;
 
 }
 
 button:hover {
     background-color: magenta;
     color: black;
+    font-size: 15px;
 }
 
 a[href*=about]:hover {
-    background-color: black;
-    color: magenta;
+
+    color: blue;
 }
 
 a:hover {
@@ -135,6 +139,7 @@ img:hover {
     -moz-filter: drop-shadow(0 0 10px rgba(255, 0, 255, 0.5));
     -o-filter: drop-shadow(0 0 10px rgba(255, 0, 255, 0.5));
     filter: drop-shadow(0 0 10px rgba(255, 0, 255, 0.5));
+    width: 333px;
 
 }
 
@@ -150,4 +155,17 @@ h2::first-letter {
 
 p::selection {
     background-color: purple;
+}
+
+#Note {
+    font-size: 30px;
+}
+
+p {
+    width: 500px;
+
+}
+
+#Henry {
+    border: none;
 }
