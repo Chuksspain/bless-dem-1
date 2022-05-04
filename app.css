@@ -59,7 +59,7 @@ a {
     border-style: solid;
     border-radius: 15px;
     text-decoration: none;
-    font-size: 32px;
+    font-size: 30px;
 }
 
 /*Sibling Selector*/
@@ -100,8 +100,8 @@ a[href*=about] {
 }
 
 button:hover {
-    background-color: magenta;
-    color: black;
+    background-color: blue;
+    color: lawngreen;
     font-size: 15px;
 }
 
@@ -117,8 +117,8 @@ a:hover {
 }
 
 h1:hover {
-    background-color: magenta;
-    color: black;
+    background-color: blue;
+    color: lawngreen;
 }
 
 #SPAIN:hover {
@@ -135,8 +135,8 @@ p:hover {
 }
 
 h2:hover {
-    background-color: magenta;
-    color: black
+    background-color: blue;
+    color: lawngreen
 }
 
 img:hover {
@@ -144,7 +144,8 @@ img:hover {
     -moz-filter: drop-shadow(0 0 10px rgba(255, 0, 255, 0.5));
     -o-filter: drop-shadow(0 0 10px rgba(255, 0, 255, 0.5));
     filter: drop-shadow(0 0 10px rgba(255, 0, 255, 0.5));
-    width: 333px;
+    width: 200px;
+
 
 }
 
@@ -177,4 +178,11 @@ p {
 
 nav>ul>li {
     display: inline;
+}
+
+img {
+    border-radius: 50%;
+    border-style: double;
+    border-color: blue;
+    border-width: 10px;
 }
