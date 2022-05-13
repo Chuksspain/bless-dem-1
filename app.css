@@ -97,6 +97,9 @@ a[href*=about] {
 
     color: blue;
 
+
+
+
 }
 
 button:hover {
@@ -193,4 +196,22 @@ img {
 
 #first {
     margin-bottom: 10px;
+}
+
+input {
+    background-color: lawngreen;
+}
+
+#request {
+    background-color: lawngreen;
+}
+
+#but {
+    background-color: yellow;
+    width: 500px;
+    height: 500px;
+}
+
+#but img {
+    height: 70%;
 }
