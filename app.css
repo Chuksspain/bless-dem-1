@@ -4,7 +4,8 @@ h2 {
     letter-spacing: 15px;
     display: inline-block;
     transition: 3s;
-
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 h1 {
@@ -12,8 +13,9 @@ h1 {
     margin: 0 auto;
     color: blue;
 
+
     text-align: center;
-    font-weight: normal;
+    font-weight: 20;
     text-decoration: wavy;
     letter-spacing: 15px;
     font-size: 70px;
@@ -32,11 +34,18 @@ button {
 p {
     color: black;
     line-height: 1;
-    display: inline-block;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 500px;
+
+
 }
 
 body {
     background-color: lawngreen;
+    font-family: Roboto, sans-serif;
+
 
 
 }
@@ -164,10 +173,7 @@ img:hover {
     -moz-filter: drop-shadow(0 0 10px rgba(255, 0, 255, 0.5));
     -o-filter: drop-shadow(0 0 10px rgba(255, 0, 255, 0.5));
     filter: drop-shadow(0 0 10px rgba(255, 0, 255, 0.5));
-    width: 200px;
-    transition: 500px;
-    transform: rotate(180deg);
-    margin-left: 400px;
+
 
 
 
@@ -191,10 +197,7 @@ p::selection {
     font-size: 30px;
 }
 
-p {
-    width: 500px;
 
-}
 
 #Henry {
     border: none;
@@ -204,14 +207,7 @@ nav>ul>li {
     display: inline;
 }
 
-img {
-    border-radius: 50%;
-    border-style: double;
-    border-color: blue;
-    border-width: 10px;
-    transition: 3s;
 
-}
 
 
 
@@ -247,4 +243,26 @@ input {
 
 #skew {
     transform: skew(10deg, 5deg);
+}
+
+
+
+#tes {
+    background-color: blue;
+    height: 500px;
+    width: 700px;
+    text-align: center;
+}
+
+#tes nav {
+    width: 80px;
+    height: 80px;
+    background-color: yellow;
+    margin: 9px;
+    display: flex;
+    justify-content: center;
+    flex-basis: 500px;
+    flex-direction: row;
+
+
 }
