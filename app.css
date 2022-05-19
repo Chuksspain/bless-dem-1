@@ -4,8 +4,7 @@ h2 {
     letter-spacing: 15px;
     display: inline-block;
     transition: 3s;
-    display: flex;
-    flex-direction: row-reverse;
+
 }
 
 h1 {
@@ -37,12 +36,13 @@ p {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
-    width: 500px;
+
 
 
 }
 
 body {
+
     background-color: lawngreen;
     font-family: Roboto, sans-serif;
 
@@ -122,7 +122,7 @@ button:hover {
     transition: 1s;
     border-color: lawngreen;
     box-shadow: 1em 1em 1em lawngreen;
-    transform: translateY(-0.25em);
+
 }
 
 a[href*=about]:hover {
