@@ -270,3 +270,7 @@ input {
     margin: 9px;
 
 }
+
+.blockquote {
+    text-align: right;
+}
