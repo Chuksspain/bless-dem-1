@@ -1,3 +1,21 @@
 body {
     background: #f5d9df;
 }
+
+#mainnavbar .navbar-brand {
+    color: #ea1c2c;
+
+}
+
+#mainnavbar {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#mainnavbar .nav-link {
+    color: white;
+}
+
+#mainnavbar .nav-link:hover {
+    color: #ea1c2c;
+}
