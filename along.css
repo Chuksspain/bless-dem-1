@@ -19,3 +19,18 @@ body {
 #mainnavbar .nav-link:hover {
     color: #ea1c2c;
 }
+
+#de {
+    margin-top: 50px;
+}
+
+#de span {
+    color: #ea1c2c;
+}
+
+@media (max-width: 1200px) {
+    #de h1 {
+        font-size: 3rem;
+        font-weight: 100;
+    }
+}
